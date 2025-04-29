@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #4CAF50;
+      --secondary-color: #ff9800;
+      --accent-color: #00bcd4;
+      --extra-color1: #e91e63;
+      --extra-color2: #9c27b0;
+      --extra-color3: #3f51b5;
+      --extra-color4: #009688;
+      --text-dark: #222;
+      --text-light: #fff;
+      --background-light: #f0f0f0;
+      --background-dark: #333;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+      color: var(--text-light);
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--background-dark);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+
+    .intro {
+      padding: 40px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .projects-preview {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .project-card {
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      color: var(--text-dark);
+      background: #fff;
+    }
+
+    .project-card:nth-child(1) {
+      background: linear-gradient(to bottom right, #ffffff, var(--extra-color1));
+    }
+    .project-card:nth-child(2) {
+      background: linear-gradient(to bottom right, #ffffff, var(--extra-color2));
+    }
+    .project-card:nth-child(3) {
+      background: linear-gradient(to bottom right, #ffffff, var(--extra-color3));
+    }
+    .project-card:nth-child(4) {
+      background: linear-gradient(to bottom right, #ffffff, var(--extra-color4));
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: var(--background-dark);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SOFTWARE SOLUTIONS</h1>
+    <p>We build PC & phone games, and productive software</p>
+  </header>
+
+  <nav>
+    <a href="Projects.html">Projects</a> <!-- Link to Projects page -->
+    <a href="about us.html">About Us</a> <!-- Link to About Us page -->
+    <a href="contact.html">Contact</a> <!-- Link to Contact page -->
+  </nav>
+
+  <section class="intro">
+    <h2>What We Do</h2>
+    <p>We are 3 computer engineering students creating high-quality games and useful tools for desktop and mobile platforms.</p>
+  </section>
+
+  <section class="projects-preview">
+    <div class="project-card">
+      <img src="pc-game.jpg" alt="PC Game">
+      <h3>PC Game</h3>
+      <p>An immersive action-adventure game designed for desktop PCs.</p>
+    </div>
+
+    <div class="project-card">
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <div>
+          <h2>
+            <img src="pc p.png" alt="PC Productivity Icon" style="width: 50px; height: auto; border-radius: 25px;">
+            PC Productivity Tool
+          </h2>
+          <p>Efficient task planner and file organizer for Windows systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="android-game.jpg" alt="Android Game">
+      <h3>Android Game</h3>
+      <p>Fun and addictive mobile game optimized for Android devices.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="android-tool.jpg" alt="Android Productivity Software">
+      <h3>Android Productivity App</h3>
+      <p>A simple and effective tool to manage your daily tasks on the go.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Team Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
