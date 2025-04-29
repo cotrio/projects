@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Team Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #4CAF50;
+      --accent-color: #00bcd4;
+      --text-light: #222;
+      --text-dark: #fff;
+      --background-light: #f9f9f9;
+      --background-dark: #333;
+      --vibrant-color: #ff4081;
+      --header-bg: #ffffff;
+      --nav-bg: #023020;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--background-light);
+      color: var(--text-light);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+      color: var(--text-dark);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      background-color: var(--nav-bg);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--vibrant-color);
+      text-decoration: underline;
+    }
+
+    .projects-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .project-card {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 20px;
+    }
+
+    .project-info h3 {
+      margin: 10px 0;
+    }
+
+    .project-info p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: var(--nav-bg);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Projects</h1>
+    <p>Explore our work in game development and productive software tools</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about us.html">About Us</a>
+    <a href="contact.html">Contact</a> <!-- Corrected Link to contact.html -->
+  </nav>
+
+  <section class="projects-section" id="projects">
+    <!-- Mock Project 1 -->
+    <div class="project-card">
+      <img src="pc-game.jpg" alt="PC Game">
+      <div class="project-info">
+        <h3>PC Game: Galactic Odyssey</h3>
+        <p>An immersive action-adventure game where players explore alien worlds, complete quests, and battle hostile forces.</p>
+        <a href="#" style="text-decoration: none; color: #00bcd4;">View Details</a>
+      </div>
+    </div>
+
+    <!-- Mock Project 2 -->
+    <div class="project-card">
+      <img src="pc-productivity.jpg" alt="PC Productivity Tool">
+      <div class="project-info">
+        <h3>PC Tool: TaskMaster</h3>
+        <p>A task management and productivity tool designed to help you organize your daily tasks and stay on track.</p>
+        <a href="#" style="text-decoration: none; color: #00bcd4;">View Details</a>
+      </div>
+    </div>
+
+    <!-- Mock Project 3 -->
+    <div class="project-card">
+      <img src="android-game.jpg" alt="Android Game">
+      <div class="project-info">
+        <h3>Android Game: Jump Frenzy</h3>
+        <p>A fast-paced, addictive mobile game where players must jump from platform to platform to avoid falling.</p>
+        <a href="#" style="text-decoration: none; color: #00bcd4;">View Details</a>
+      </div>
+    </div>
+
+    <!-- Mock Project 4 -->
+    <div class="project-card">
+      <img src="android-productivity.jpg" alt="Android Productivity Tool">
+      <div class="project-info">
+        <h3>Android Tool: QuickNote</h3>
+        <p>A simple note-taking and task management app that syncs with your Google account to keep you organized wherever you go.</p>
+        <a href="#" style="text-decoration: none; color: #00bcd4;">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Team Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

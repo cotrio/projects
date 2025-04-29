@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Team Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #4CAF50;
+      --accent-color: #00bcd4;
+      --text-light: #222;
+      --text-dark: #fff;
+      --background-light: #f9f9f9;
+      --background-dark: #333;
+      --vibrant-color: #ff4081;
+      --header-bg: #ffffff;
+      --nav-bg: #d0f0f5;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--background-light);
+      color: var(--text-light);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+      color: var(--text-dark);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      background-color: var(--nav-bg);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--vibrant-color);
+      text-decoration: underline;
+    }
+
+    .about-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section h2 {
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .team-member {
+      margin: 30px 0;
+    }
+
+    footer {
+      background-color: var(--nav-bg);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .team-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Our Team</h1>
+    <p>Meet the minds behind the games and software</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Projects.html">Projects</a>
+    <a href="contact.html">Contact</a> <!-- ✅ Corrected Link to contact.html -->
+  </nav>
+
+  <section class="about-section">
+    <h2>Who We Are</h2>
+    <p>We are a team of three dedicated and creative Computer Engineering students with a strong passion for building impactful digital experiences.</p>
+
+    <p>Our skills span across game development for both PC and mobile platforms, as well as designing productive software tools that solve real-world problems.</p>
+
+    <p>What started as a shared interest in coding and innovation has grown into a collaborative journey where we constantly push our boundaries and learn from each project we create.</p>
+
+    <p>This website serves as a central hub to showcase our work—from fully developed games and utility apps to experimental prototypes and freelance projects.</p>
+
+    <p>We’re not just looking to display our skills—we’re looking to connect with potential employers, collaborators, and clients who value quality, creativity, and reliability.</p>
+
+    <img src="three.jpg" alt="Creative team working on a project" class="team-image">
+
+    <div class="team-member">
+      <h3>Ali</h3>
+      <p>Game developer and graphics designer with a focus on immersive PC games.</p>
+    </div>
+    <div class="team-member">
+      <h3>Zainab</h3>
+      <p>App developer and UI/UX expert with a passion for clean design and user-friendly interfaces.</p>
+    </div>
+    <div class="team-member">
+      <h3>Hamza</h3>
+      <p>Backend engineer and tool builder who ensures everything works smoothly behind the scenes.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Team Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

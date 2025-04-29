@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Team Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #4CAF50;
+      --accent-color: #00bcd4;
+      --text-light: #222;
+      --text-dark: #fff;
+      --background-light: #f9f9f9;
+      --background-dark: #333;
+      --vibrant-color: #ff4081;
+      --nav-bg: #023020;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--background-light);
+      color: var(--text-light);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+      color: var(--text-dark);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      background-color: var(--nav-bg);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--vibrant-color);
+      text-decoration: underline;
+    }
+
+    .contact-section {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 10px;
+      color: var(--text-light);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h2 {
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: var(--accent-color);
+    }
+
+    footer {
+      background-color: var(--nav-bg);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Projects.html">Projects</a>
+    <a href="about us.html">About Us</a>
+  </nav>
+
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <p>If you have any questions, collaboration ideas, or just want to say hello, feel free to send us a message using the form below.</p>
+
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Team Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
